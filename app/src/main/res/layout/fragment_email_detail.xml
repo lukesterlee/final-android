@@ -38,15 +38,23 @@
       android:layout_below="@id/email_subject"
       />
 
-    <!-- TODO: this won't work with longer email bodies; implementi scrolling -->
+    <!-- : this won't work with longer email bodies; implementi scrolling -->
 
-    <TextView
-        android:id="@+id/email_body"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/email_body"
-        android:layout_marginLeft="@dimen/email_detail_left_margin"
-        android:layout_below="@+id/email_sent"
-        />
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/email_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/email_body"
+            android:layout_marginLeft="@dimen/email_detail_left_margin"
+            android:layout_below="@+id/email_sent"
+            />
+
+
+    </ScrollView>
+
 
 </RelativeLayout>
