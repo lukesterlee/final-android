@@ -58,6 +58,7 @@ public class EmailApplication extends Application {
           builder.setContentTitle(getResources().getString(R.string.you_got_email));
           builder.setTicker(getResources().getText(R.string.notification_email_from) + newEmail.getFrom());
           builder.setContentText(newEmail.getBody());
+          builder.setSmallIcon(R.drawable.c4q);
           Intent goToEmailDetailActivity = new Intent(getApplicationContext(), EmailDetailActivity.class);
           PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, goToEmailDetailActivity, PendingIntent.FLAG_UPDATE_CURRENT);
           builder.setContentIntent(pendingIntent);

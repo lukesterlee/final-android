@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import nyc.c4q.android.EmailApplication;
 import nyc.c4q.android.R;
 import nyc.c4q.android.model.Email;
 import nyc.c4q.android.rest.EmailService;

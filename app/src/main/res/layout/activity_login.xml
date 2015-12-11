@@ -17,7 +17,10 @@
     <!-- : show the c4q logo, center it and center crop it -->
 
   <ImageView
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/c4q"
       android:id="@+id/logo"
+      android:scaleType="centerCrop"
       android:layout_width="80dp"
       android:layout_height="80dp"
       android:layout_marginTop="100dp"

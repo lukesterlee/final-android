@@ -37,7 +37,7 @@ public class LoginActivity extends Activity {
     loginButton = (Button) findViewById(R.id.login);
     c4qLogo = (ImageView) findViewById(R.id.logo);
 
-    Picasso.with(getApplicationContext()).load(R.drawable.c4q).centerInside().centerCrop().into(c4qLogo);
+    //Picasso.with(getApplicationContext()).load(R.drawable.c4q).centerCrop().into(c4qLogo);
 
     //  - call checkCredentials via OnClickListener
     loginButton.setOnClickListener(new View.OnClickListener() {
